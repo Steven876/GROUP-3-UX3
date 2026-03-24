@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>UTech Undergraduate Application</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -33,11 +34,9 @@
     .logo-placeholder {
       width: 70px;
       height: 70px;
-      
       display: flex;
       align-items: center;
       justify-content: center;
-      
       color: #002D62;
       text-align: center;
       margin-right: 20px;
@@ -102,7 +101,6 @@
       letter-spacing: 1px;
     }
 
-    /* Applying as - nowrap to keep on one line */
     .applying-row {
       font-size: 12px;
       margin-bottom: 10px;
@@ -113,7 +111,6 @@
       margin-right: 10px;
     }
 
-    /* Form table */
     table.form-table {
       width: 100%;
       border-collapse: collapse;
@@ -171,7 +168,7 @@
       margin-top: 20px;
     }
 
-    input[type="submit"], .submit-row button {
+    .submit-row button {
       background-color: #002D62;
       color: #FFCC00;
       border: none;
@@ -182,12 +179,10 @@
       cursor: pointer;
     }
 
-    input[type="submit"], .submit-row button:hover {
+    .submit-row button:hover {
       background-color: #FFCC00;
       color: #002D62;
     }
-
-    .req { color: red; }
 
     .note {
       font-size: 10px;
@@ -249,314 +244,319 @@
       background-color: #FFCC00;
       color: #002D62;
     }
-    </style>
+  </style>
+
 </head>
+
 <body>
 
-<div class="page">
+  <div class="page">
 
-  <!-- Header -->
-  <div class="header">
-    <div class="logo-placeholder"><img src="utech-logo.png" alt="UTech Logo"></div>
-    <div class="header-text">
-      <h2>UNIVERSITY OF TECHNOLOGY, JAMAICA</h2>
-      <h3>UNDERGRADUATE STUDENT APPLICATION</h3>
-      <div class="academic-year">
-        ACADEMIC YEAR &nbsp;
-        <input type="text" style="width:60px; font-size:12px; padding:2px 4px; border:none; border-bottom:1px solid #333;">
-        &nbsp;/&nbsp;
-        <input type="text" style="width:60px; font-size:12px; padding:2px 4px; border:none; border-bottom:1px solid #333;">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-placeholder"><img src="utech-logo.png" alt="UTech Logo"></div>
+      <div class="header-text">
+        <h2>UNIVERSITY OF TECHNOLOGY, JAMAICA</h2>
+        <h3>UNDERGRADUATE STUDENT APPLICATION</h3>
+        <div class="academic-year">
+          ACADEMIC YEAR &nbsp;
+          <input type="text" style="width:60px; font-size:12px; padding:2px 4px; border:none; border-bottom:1px solid #333;">
+          &nbsp;/&nbsp;
+          <input type="text" style="width:60px; font-size:12px; padding:2px 4px; border:none; border-bottom:1px solid #333;">
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Instructions -->
-  <div class="instructions">
-    <b>INSTRUCTIONS</b>
-    <ol>
-      <li>Read the accompanying Summary of Programmes before completing this form. <b>DO NOT WRITE IN SHADED AREAS.</b></li>
-      <li>Ensure that the application is <b>FULLY</b> completed using <b>CAPITAL</b> letters ensuring legibility. Forms not properly completed will not be processed.</li>
-      <li>Online applications are preferred. There is no processing fee for applications submitted online. The electronic application can be found at <a href="http://www.utechjamaica.edu.jm" target="_blank">http://www.utechjamaica.edu.jm</a></li>
-    </ol>
-  </div>
-
-  <form>
-
-    <!-- Applying As -->
-    <div class="applying-row">
-      <b>APPLYING AS A:</b> &nbsp;
-      <label><input type="radio" name="student_type" value="regular"> REGULAR STUDENT</label>
-      <label><input type="radio" name="student_type" value="mature"> MATURE STUDENT</label>
-      <label><input type="radio" name="student_type" value="specially"> SPECIALLY ADMITTED STUDENT</label>
-      <label><input type="radio" name="student_type" value="occasional"> OCCASIONAL STUDENT</label>
+    <!-- Instructions -->
+    <div class="instructions">
+      <b>INSTRUCTIONS</b>
+      <ol>
+        <li>Read the accompanying Summary of Programmes before completing this form. <b>DO NOT WRITE IN SHADED AREAS.</b></li>
+        <li>Ensure that the application is <b>FULLY</b> completed using <b>CAPITAL</b> letters ensuring legibility. Forms not properly completed will not be processed.</li>
+        <li>Online applications are preferred. There is no processing fee for applications submitted online. The electronic application can be found at <a href="http://www.utechjamaica.edu.jm" target="_blank">http://www.utechjamaica.edu.jm</a></li>
+      </ol>
     </div>
 
-    <!-- Section 1 -->
-    <div class="section-heading">SECTION 1: PROGRAMME</div>
+    <form>
 
-    <table class="form-table" border="1">
+      <!-- Applying As -->
+      <div class="applying-row">
+        <b>APPLYING AS A:</b> &nbsp;
+        <label><input type="radio" name="student_type" value="regular"> REGULAR STUDENT</label>
+        <label><input type="radio" name="student_type" value="mature"> MATURE STUDENT</label>
+        <label><input type="radio" name="student_type" value="specially"> SPECIALLY ADMITTED STUDENT</label>
+        <label><input type="radio" name="student_type" value="occasional"> OCCASIONAL STUDENT</label>
+      </div>
 
-      <!-- Attendance -->
-      <tr>
-        <td colspan="4">
-          <b>PREFERRED MODE OF ATTENDANCE:</b> &nbsp;&nbsp;
-          <label><input type="radio" name="attendance" value="day"> DAY</label>
-          <label><input type="radio" name="attendance" value="evening"> EVENING</label>
-        </td>
-      </tr>
+      <!-- Section 1 -->
+      <div class="section-heading">SECTION 1: PROGRAMME</div>
 
-      <!-- Faculty - all in one row -->
-      <tr>
-        <td colspan="4">
-          <b>FACULTY:</b> &nbsp;&nbsp; <br>
-          <label><input type="checkbox" name="cohs"> COLLEGE OF HEALTH SCIENCES</label> &nbsp;
-          <label><input type="checkbox" name="faculty" value="be"> BUILT ENVIRONMENT</label> &nbsp;
-          <label><input type="checkbox" name="faculty" value="bm"> BUSINESS AND MANAGEMENT</label> &nbsp;
-          <label><input type="checkbox" name="faculty" value="els"> EDUCATION &amp; LIBERAL STUDIES</label> &nbsp;
-          <label><input type="checkbox" name="faculty" value="ec"> ENGINEERING AND COMPUTING</label> &nbsp;
-          <label><input type="checkbox" name="faculty" value="law"> LAW</label> &nbsp;
-          <label><input type="checkbox" name="faculty" value="ss"> SCIENCE AND SPORT</label>
-        </td>
-      </tr>
+      <table class="form-table" border="1">
 
-      <!-- Franchise -->
-      <tr>
-        <td colspan="4">
-          <span class="field-label">FRANCHISE OR OUTREACH LOCATION (indicate if any)</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Attendance -->
+        <tr>
+          <td colspan="4">
+            <b>PREFERRED MODE OF ATTENDANCE:</b> &nbsp;&nbsp;
+            <label><input type="radio" name="attendance" value="day"> DAY</label>
+            <label><input type="radio" name="attendance" value="evening"> EVENING</label>
+          </td>
+        </tr>
 
-      <!-- Programme choices -->
-      <tr>
-        <td width="15%"><span class="field-label">2. PROGRAMME CODE</span><input type="text"></td>
-        <td width="35%"><span class="field-label">PROGRAMME</span><input type="text"></td>
-        <td width="15%"><span class="field-label">3. PROGRAMME CODE (2nd Choice)</span><input type="text"></td>
-        <td width="35%"><span class="field-label">PROGRAMME</span><input type="text"></td>
-      </tr>
+        <!-- Faculty - all in one row -->
+        <tr>
+          <td colspan="4">
+            <b>FACULTY:</b> &nbsp;&nbsp; <br>
+            <label><input type="checkbox" name="cohs"> COLLEGE OF HEALTH SCIENCES</label> &nbsp;
+            <label><input type="checkbox" name="faculty" value="be"> BUILT ENVIRONMENT</label> &nbsp;
+            <label><input type="checkbox" name="faculty" value="bm"> BUSINESS AND MANAGEMENT</label> &nbsp;
+            <label><input type="checkbox" name="faculty" value="els"> EDUCATION &amp; LIBERAL STUDIES</label> &nbsp;
+            <label><input type="checkbox" name="faculty" value="ec"> ENGINEERING AND COMPUTING</label> &nbsp;
+            <label><input type="checkbox" name="faculty" value="law"> LAW</label> &nbsp;
+            <label><input type="checkbox" name="faculty" value="ss"> SCIENCE AND SPORT</label>
+          </td>
+        </tr>
 
-    </table>
+        <!-- Franchise -->
+        <tr>
+          <td colspan="4">
+            <span class="field-label">FRANCHISE OR OUTREACH LOCATION (indicate if any)</span>
+            <input type="text">
+          </td>
+        </tr>
 
-    <!-- Section 2 -->
-    <div class="section-heading">SECTION 2: PERSONAL DETAILS</div>
+        <!-- Programme choices -->
+        <tr>
+          <td width="15%"><span class="field-label">2. PROGRAMME CODE</span><input type="text"></td>
+          <td width="35%"><span class="field-label">PROGRAMME</span><input type="text"></td>
+          <td width="15%"><span class="field-label">3. PROGRAMME CODE (2nd Choice)</span><input type="text"></td>
+          <td width="35%"><span class="field-label">PROGRAMME</span><input type="text"></td>
+        </tr>
 
-    <table class="form-table" border="1">
+      </table>
 
-      <!-- Q4 -->
-      <tr>
-        <td colspan="4">
-          <b>4.</b> HAVE YOU BEEN AN ENQUIRER, APPLICANT OR STUDENT BEFORE?
-          <br><br>
-          <label><input type="radio" name="q4" value="yes"> YES</label>
-          <label><input type="radio" name="q4" value="no"> NO</label>
-          &nbsp;&nbsp; IF YES, PROVIDE ID # IF KNOWN: <input type="text" style="width:140px;">
-        </td>
-      </tr>
+      <!-- Section 2 -->
+      <div class="section-heading">SECTION 2: PERSONAL DETAILS</div>
 
-      <!-- Q5 & Q6 -->
-      <tr>
-        <td width="50%">
-          <span class="field-label">5. SURNAME <span class="req">*</span></span>
-          <input type="text">
-        </td>
-        <td width="50%" colspan="3">
-          <span class="field-label">6. FIRST NAME <span class="req">*</span></span>
-          <input type="text">
-        </td>
-      </tr>
+      <table class="form-table" border="1">
 
-      <!-- Q7 & Q8 -->
-      <tr>
-        <td>
-          <span class="field-label">7. FORMER SURNAME (If any)</span>
-          <input type="text">
-        </td>
-        <td colspan="3">
-          <span class="field-label">8. MIDDLE NAME(S)</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Q4 -->
+        <tr>
+          <td colspan="4">
+            <b>4.</b> HAVE YOU BEEN AN ENQUIRER, APPLICANT OR STUDENT BEFORE?
+            <br><br>
+            <label><input type="radio" name="q4" value="yes"> YES</label>
+            <label><input type="radio" name="q4" value="no"> NO</label>
+            &nbsp;&nbsp; IF YES, PROVIDE ID # IF KNOWN: <input type="text" style="width:140px;">
+          </td>
+        </tr>
 
-      <!-- Q9, Q10, Q11, Q12 -->
-      <tr>
-        <td style="width:90px; min-width:90px;">
-          <span class="field-label">9. GENDER <span class="req">*</span></span>
-          <label><input type="radio" name="gender" value="m"> M</label>
-          <label><input type="radio" name="gender" value="f"> F</label>
-        </td>
-        <td style="width:280px; min-width:280px;">
-          <span class="field-label">10. TITLE</span>
-          <label><input type="radio" name="title" value="miss"> MISS</label>
-          <label><input type="radio" name="title" value="mrs"> MRS.</label>
-          <label><input type="radio" name="title" value="mr"> MR.</label><br><br>
-          &nbsp; OTHER: <input type="text" style="width:80px; display:inline; width:80px;">
-        </td>
-        <td style="width:60px; min-width:60px;">
-          <span class="field-label">11. AGE</span>
-          <input type="number" style="width:60px;">
-        </td>
-        <td style="width:200px;">
-          <span class="field-label">12. DATE OF BIRTH (YYYY/MM/DD)</span>
-          <input type="text" placeholder="YYYY/MM/DD">
-        </td>
-      </tr>
+        <!-- Q5 & Q6 -->
+        <tr>
+          <td width="50%">
+            <span class="field-label">5. SURNAME</span>
+            <input type="text">
+          </td>
+          <td width="50%" colspan="3">
+            <span class="field-label">6. FIRST NAME</span>
+            <input type="text">
+          </td>
+        </tr>
 
-      <!-- Q13 -->
-      <tr>
-        <td colspan="4">
-          <b>13.</b> WERE YOU BORN IN JAMAICA? &nbsp;
-          <label><input type="radio" name="q13" value="yes"> YES</label>
-          <label><input type="radio" name="q13" value="no"> NO</label>
-        </td>
-      </tr>
+        <!-- Q7 & Q8 -->
+        <tr>
+          <td>
+            <span class="field-label">7. FORMER SURNAME (If any)</span>
+            <input type="text">
+          </td>
+          <td colspan="3">
+            <span class="field-label">8. MIDDLE NAME(S)</span>
+            <input type="text">
+          </td>
+        </tr>
 
-      <!-- Q14 -->
-      <tr>
-        <td colspan="4">
-          <b>14.</b> IF YOUR ANSWER TO QUESTION 13 IS NO, DO YOU HAVE A CERTIFICATE OF NATURALIZATION AS A JAMAICAN? &nbsp;
-          <label><input type="radio" name="q14" value="yes"> YES</label>
-          <label><input type="radio" name="q14" value="no"> NO</label>
-        </td>
-      </tr>
+        <!-- Q9, Q10, Q11, Q12 -->
+        <tr>
+          <td style="width:90px; min-width:90px;">
+            <span class="field-label">9. GENDER</span>
+            <label><input type="radio" name="gender" value="m"> M</label>
+            <label><input type="radio" name="gender" value="f"> F</label>
+          </td>
+          <td style="width:280px; min-width:280px;">
+            <span class="field-label">10. TITLE</span>
+            <label><input type="radio" name="title" value="miss"> MISS</label>
+            <label><input type="radio" name="title" value="mrs"> MRS.</label>
+            <label><input type="radio" name="title" value="mr"> MR.</label> <br><br>
+            <label>
+              <input type="radio" name="title" value="other"> OTHER, SPECIFY
+            </label>
+            <input type="text" name="other_title" style="width:80px;" aria-label="Specify other title">
+            
+          </td>
+          <td style="width:60px; min-width:60px;">
+            <span class="field-label">11. AGE</span>
+            <input type="number" style="width:60px;">
+          </td>
+          <td style="width:200px;">
+            <span class="field-label">12. DATE OF BIRTH (YYYY/MM/DD)</span>
+            <input type="text" placeholder="YYYY/MM/DD">
+          </td>
+        </tr>
 
-      <!-- Q15 -->
-      <tr>
-        <td colspan="4">
-          <span class="field-label">15. HOW LONG HAVE YOU LIVED OUTSIDE JAMAICA? (Jamaican Citizens Living Overseas)</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Q13 -->
+        <tr>
+          <td colspan="4">
+            <b>13.</b> WERE YOU BORN IN JAMAICA? &nbsp;
+            <label><input type="radio" name="q13" value="yes"> YES</label>
+            <label><input type="radio" name="q13" value="no"> NO</label>
+          </td>
+        </tr>
 
-      <!-- Q16 & Q17 -->
-      <tr>
-        <td colspan="2">
-          <b>16.</b> ARE YOUR PARENTS JAMAICAN? (Non-Jamaican Citizens) &nbsp;
-          <label><input type="radio" name="q16" value="yes"> YES</label>
-          <label><input type="radio" name="q16" value="no"> NO</label>
-        </td>
-        <td colspan="2">
-          <span class="field-label">17. TRN</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Q14 -->
+        <tr>
+          <td colspan="4">
+            <b>14.</b> IF YOUR ANSWER TO QUESTION 13 IS NO, DO YOU HAVE A CERTIFICATE OF NATURALIZATION AS A JAMAICAN? &nbsp;
+            <label><input type="radio" name="q14" value="yes"> YES</label>
+            <label><input type="radio" name="q14" value="no"> NO</label>
+          </td>
+        </tr>
 
-      <!-- Q18 -->
-      <tr>
-        <td colspan="4">
-          <span class="field-label">18. PERMANENT ADDRESS: NUMBER &amp; STREET OR DISTRICT</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Q15 -->
+        <tr>
+          <td colspan="4">
+            <span class="field-label">15. HOW LONG HAVE YOU LIVED OUTSIDE JAMAICA? (Jamaican Citizens Living Overseas)</span>
+            <input type="text">
+          </td>
+        </tr>
 
-      <!-- Q19 & Q20 -->
-      <tr>
-        <td colspan="2">
-          <span class="field-label">19. CITY/TOWN OR POST OFFICE</span>
-          <input type="text">
-        </td>
-        <td colspan="2">
-          <span class="field-label">20. PARISH/STATE</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Q16 & Q17 -->
+        <tr>
+          <td colspan="2">
+            <b>16.</b> ARE YOUR PARENTS JAMAICAN? (Non-Jamaican Citizens) &nbsp;
+            <label><input type="radio" name="q16" value="yes"> YES</label>
+            <label><input type="radio" name="q16" value="no"> NO</label>
+          </td>
+          <td colspan="2">
+            <span class="field-label">17. TRN</span>
+            <input type="text">
+          </td>
+        </tr>
 
-      <!-- Q21 & Q22 -->
-      <tr>
-        <td colspan="2">
-          <span class="field-label">21. COUNTRY</span>
-          <input type="text">
-        </td>
-        <td colspan="2">
-          <span class="field-label">22. EMAIL</span>
-          <input type="email">
-        </td>
-      </tr>
+        <!-- Q18 -->
+        <tr>
+          <td colspan="4">
+            <span class="field-label">18. PERMANENT ADDRESS: NUMBER &amp; STREET OR DISTRICT</span>
+            <input type="text">
+          </td>
+        </tr>
 
-      <!-- Q23 & Q24 -->
-      <tr>
-        <td>
-          <span class="field-label">23. TELEPHONE (HOME)</span>
-          <input type="tel">
-        </td>
-        <td>
-          <span class="field-label">WORK</span>
-          <input type="tel">
-        </td>
-        <td>
-          <span class="field-label">MOBILE</span>
-          <input type="tel">
-        </td>
-        <td>
-          <span class="field-label">24. FAX</span>
-          <input type="tel">
-        </td>
-      </tr>
+        <!-- Q19 & Q20 -->
+        <tr>
+          <td colspan="2">
+            <span class="field-label">19. CITY/TOWN OR POST OFFICE</span>
+            <input type="text">
+          </td>
+          <td colspan="2">
+            <span class="field-label">20. PARISH/STATE</span>
+            <input type="text">
+          </td>
+        </tr>
 
-      <!-- Q25 -->
-      <tr>
-        <td colspan="4">
-          <span class="field-label">25. MAILING ADDRESS (if different from above) NUMBER &amp; STREET OR DISTRICT</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Q21 & Q22 -->
+        <tr>
+          <td colspan="2">
+            <span class="field-label">21. COUNTRY</span>
+            <input type="text">
+          </td>
+          <td colspan="2">
+            <span class="field-label">22. EMAIL</span>
+            <input type="email">
+          </td>
+        </tr>
 
-      <!-- Q26 & Q27 -->
-      <tr>
-        <td colspan="2">
-          <span class="field-label">26. CITY/TOWN OR POST OFFICE</span>
-          <input type="text">
-        </td>
-        <td colspan="2">
-          <span class="field-label">27. PARISH/STATE</span>
-          <input type="text">
-        </td>
-      </tr>
+        <!-- Q23 & Q24 -->
+        <tr>
+          <td>
+            <span class="field-label">23. TELEPHONE (HOME)</span>
+            <input type="tel">
+          </td>
+          <td>
+            <span class="field-label">WORK</span>
+            <input type="tel">
+          </td>
+          <td>
+            <span class="field-label">MOBILE</span>
+            <input type="tel">
+          </td>
+          <td>
+            <span class="field-label">24. FAX</span>
+            <input type="tel">
+          </td>
+        </tr>
 
-      <!-- Q28 & Q29 -->
-      <tr>
-        <td colspan="2">
-          <span class="field-label">28. COUNTRY</span>
-          <input type="text">
-        </td>
-        <td colspan="2">
-          <span class="field-label">29. EMAIL</span>
-          <input type="email">
-        </td>
-      </tr>
+        <!-- Q25 -->
+        <tr>
+          <td colspan="4">
+            <span class="field-label">25. MAILING ADDRESS (if different from above) NUMBER &amp; STREET OR DISTRICT</span>
+            <input type="text">
+          </td>
+        </tr>
 
-      <!-- Q30a -->
-      <tr>
-        <td>
-          <span class="field-label">30a. TELEPHONE (HOME)</span>
-          <input type="tel">
-        </td>
-        <td>
-          <span class="field-label">WORK</span>
-          <input type="tel">
-        </td>
-        <td>
-          <span class="field-label">MOBILE</span>
-          <input type="tel">
-        </td>
-        <td>
-          <span class="field-label">30b. FAX</span>
-          <input type="tel">
-        </td>
-      </tr>
+        <!-- Q26 & Q27 -->
+        <tr>
+          <td colspan="2">
+            <span class="field-label">26. CITY/TOWN OR POST OFFICE</span>
+            <input type="text">
+          </td>
+          <td colspan="2">
+            <span class="field-label">27. PARISH/STATE</span>
+            <input type="text">
+          </td>
+        </tr>
 
-    </table>
+        <!-- Q28 & Q29 -->
+        <tr>
+          <td colspan="2">
+            <span class="field-label">28. COUNTRY</span>
+            <input type="text">
+          </td>
+          <td colspan="2">
+            <span class="field-label">29. EMAIL</span>
+            <input type="email">
+          </td>
+        </tr>
 
-    <!-- Submit -->
-    <div class="submit-row">
-      <button type="button" onclick="showModal()">SUBMIT APPLICATION</button>
-    </div>
+        <!-- Q30a -->
+        <tr>
+          <td>
+            <span class="field-label">30a. TELEPHONE (HOME)</span>
+            <input type="tel">
+          </td>
+          <td>
+            <span class="field-label">WORK</span>
+            <input type="tel">
+          </td>
+          <td>
+            <span class="field-label">MOBILE</span>
+            <input type="tel">
+          </td>
+          <td>
+            <span class="field-label">30b. FAX</span>
+            <input type="tel">
+          </td>
+        </tr>
 
-  </form>
+      </table>
 
-  <p class="note">Revised September 2009</p>
+      <!-- Submit -->
+      <div class="submit-row">
+        <button type="button" onclick="showModal()">SUBMIT APPLICATION</button>
+      </div>
 
-</div>
+    </form>
 
+    <p class="note">Revised September 2009</p>
+
+  </div>
 
   <!-- Modal -->
   <div class="modal-overlay" id="submitModal">
